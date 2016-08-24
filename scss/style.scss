@@ -1,29 +1,40 @@
 @import 'variables';
 @import 'nav';
+@import 'footer';
 body {
   color: $texas-rose;
   background-color: $pickled-bluewood;
 }
 
-a:link {
-  color: $cape-cod;
-  background-color: $porche;
+/* center everything on the photos page */
+#photos .content{
+  text-align: center;
 }
 
-a:visited {
-  color: $pickled-bluewood;
-  background-color: $porche;
-}
 
-a:hover {
-  color: $dolphin;
-  background-color: $texas-rose;
-}
 
-a:active {
-  color: $storm-gray;
-  background-color: $flax;
-}
+
+
+
+// a:link {
+//   color: $cape-cod;
+//   background-color: $porche;
+// }
+
+// a:visited {
+//   color: $pickled-bluewood;
+//   background-color: $porche;
+// }
+
+// a:hover {
+//   color: $dolphin;
+//   background-color: $texas-rose;
+// }
+
+// a:active {
+//   color: $storm-gray;
+//   background-color: $flax;
+// }
 
 header {
   color: $flax;
@@ -66,10 +77,6 @@ tr.highlight td {
   background-color: $coral-reef;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-}
 
 body {
   margin: 1em 10%;
@@ -113,12 +120,7 @@ header {
   background-image: url(../img/drummer.gif);
 }
 
-.content img {
-  border-width: .1em;
-  border-style: solid;
-  outline-width: .1em;
-  outline-style: solid;
-}
+
 
 #imagegallery li {
   display: inline;
@@ -171,13 +173,11 @@ td {
 }
 
 body {
-  font-size: 76%;
+
   font-family: "Helvetica", "Arial", sans-serif;
 }
 
-body * {
-  font-size: 1em;
-}
+
 
 a {
   font-weight: bold;

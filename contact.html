@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>WS Domsters: Contact</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,38 +14,60 @@
       <img src="img/logo.gif" alt="Jay Skript and the Domsters" />
     </header>
     <!-- END header -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="photos.html">Photos</a></li>
-        <li><a href="live.html">Live</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+   <nav class="navbar navbar-light bg-faded">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+          &#9776;
+        </button>
+        <div class="collapse navbar-toggleable-xs" id="navbar-header">
+          <a class="navbar-brand" href="#">Lipsync-battle</a>
+          <ul class="nav navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photos.html">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="live.html">Live</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav> <!-- /navbar -->
     <!-- END nav -->
     <div class="content">
       <h1>Contact the band</h1>
-      <form method="post" action="#">
-        <fieldset>
-          <p>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" value="Your name" class="required" />
-          </p>
-          <p>
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" value="Your email address" class="email required" />
-          </p>
-          <p>
-            <label for="message">Message:</label>
-            <textarea cols="45" rows="7" id="message" name="message" class="required">Write your message here.</textarea>
-          </p>
-          <input type="submit" value="Send" />
-        </fieldset>
-      </form>
-    </div>
+
+
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Full Name">
+  </div>
+  <div class="form-group">
+    <label  for="exampleInputPassword1">Email</label>
+    <input  type="email" class="form-control" id="exampleInputPassword1" placeholder="eMail" >
+  </div>
+    <div class="form-group">
+    <label for="exampleInputPassword1">Message</label>
+
+    <textarea class="form-control" rows="3" placeholder="Tell Us Something" ></textarea>
+  </div>
+  <button type="button" class="btn btn-primary">Send</button>
+
+
+
+
+</form>
+ </div>
     <!-- END .content -->
-    <footer>
+    <footer class="text-xs-center">
       <p>&copy; 2016</p>
     </footer>
   </div>
